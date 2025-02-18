@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>PassPuzzle - Strong Password Generator</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">PassPuzzle</div>
+    <div class="nav-links">
+      <a href="#"><i class="fas fa-home"></i> <span>Home</span></a>
+      <a href="#"><i class="fas fa-shield-alt"></i> <span>Features</span></a>
+      <a href="#"><i class="fas fa-info-circle"></i> <span>About</span></a>
+      <a href="#"><i class="fas fa-envelope"></i> <span>Contact</span></a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="left-section">
+      <h2>Craft Secure Passwords with Confidence</h2>
+      <p>Generate unbreakable passwords that keep your digital life safe and secure. Built with modern encryption
+        standards.</p>
+      <div class="social-links">
+        <a href="https://github.com/itxAMaN23" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/aman-saluja-a501a023b/" target="_blank" class="social-link">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+    <div class="password-card">
+      <form id="password-form">
+        <div class="form-group">
+          <label for="length">
+            <i class="fas fa-text-width"></i> Password Length: <span id="length-value">16</span>
+          </label>
+          <input type="range" id="length" min="8" max="32" value="16">
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="uppercase" checked>
+          <label for="uppercase">
+            <i class="fas fa-font"></i> Include Uppercase Letters
+          </label>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="numbers" checked>
+          <label for="numbers">
+            <i class="fas fa-hashtag"></i> Include Numbers
+          </label>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="symbols" checked>
+          <label for="symbols">
+            <i class="fas fa-asterisk"></i> Include Symbols
+          </label>
+        </div>
+
+        <div class="password-result">
+          <input type="text" id="password" readonly placeholder="Click generate to create password">
+          <button type="button" class="copy-btn" id="copy">
+            <i class="far fa-copy"></i>
+          </button>
+        </div>
+
+        <button type="button" id="generate">
+          <i class="fas fa-key"></i> Generate Password
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
