@@ -21,7 +21,7 @@ Features a responsive glassmorphism design, dark theme, and password customizati
 ---
 
 ## 🖼️ Screenshot
-<img src="./assets/PassPuzzle.png" alt="App Screenshot" width="720" /> 
+<img src="./assets/Screenshot 2025-08-25 215625.png" alt="App Screenshot" width="720" /> 
 
 ---
 
